@@ -1,0 +1,12 @@
+:root {
+  font-family: 'Red Hat Display', sans-serif;
+
+  /* primary */
+  --p-dark-cyan: hsl(185, 75%, 39%);
+  --p-very-dark-desaturated: hsl(229, 23%, 23%);
+  --p-dark-grayish-blue: hsl(227, 10%, 46%);
+  /* secondary */
+  --n-dark-gray: hsl(0, 0%, 59%);
+
+  font-size: 1.125rem;
+}
