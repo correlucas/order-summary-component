@@ -10,3 +10,14 @@
 
   font-size: 1.125rem;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+* img {
+  display: block;
+}
