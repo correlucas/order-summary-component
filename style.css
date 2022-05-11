@@ -60,13 +60,13 @@ body {
 
   background-color: var(--n-white);
   box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
-}
-
-.container:hover {
-  box-shadow: 15px 65px 65px -10px rgba(13, 48, 189, 0.194);
   transition: ease-in 0.5s;
 }
 
+.container:hover {
+  box-shadow: 15px 70px 70px -10px rgba(13, 48, 189, 0.231);
+  transition: ease-in 0.5s;
+}
 
 .card {
   align-items: center;
@@ -74,9 +74,28 @@ body {
   padding: 48px;
 }
 
-.hero-img {
-  width: 100%;
+.hero-container {
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  max-width: 100%;
   border-radius: 20px 20px 0 0;
+  transform: scale(1);
+}
+
+.hero-container img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  transition: ease-in-out 1s;
+}
+
+.hero-img:hover {
+  transform: scale(1.1);
+  filter: hue-rotate(60deg);
+  transition: ease-in-out 1s;
 }
 
 .container h1 {
@@ -156,6 +175,7 @@ body {
   font-weight: 700;
   color: var(--n-dark-gray);
   margin-top: 32px;
+  transition: ease-in 0.3s;
 }
 
 .cancel-order:hover {
@@ -184,6 +204,7 @@ body {
   color: var(--n-white);
   background-color: var(--p-blue);
   filter: drop-shadow(0px 8px 6px rgba(7, 23, 255, 0.245));
+  transition: ease-in 0.3s;
 }
 
 .button:hover {
