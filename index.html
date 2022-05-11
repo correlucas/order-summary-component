@@ -16,24 +16,26 @@
 </head>
 
 <body>
-  <main class="container" aria-label="Order Summary Card" role="main">
-    <img class="hero-img" src="./images/illustration-hero.svg" alt="Hero Illustration" role="Banner">
-    <div class="card">
-      <h1>Order Summary</h1>
-      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+  <main aria-label="Order Summary Card">
+    <div class="container">
+      <img class="hero-img" src="./images/illustration-hero.svg" alt="Hero Illustration" role="Banner">
+      <div class="card">
+        <h1>Order Summary</h1>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-      <div class="payment">
-        <div class="icon"><img src="./images/icon-music.svg" alt="Music Icon"></div>
-        <div class="plan">
-          <h2 class="plan-type">Annual Plan</h2>
-          <p class="plan-price">$59.99/year</p>
+        <div class="payment" aria-label="Choose your plan">
+          <div class="icon"><img src="./images/icon-music.svg" alt="Music Icon"></div>
+          <div class="plan">
+            <h2 class="plan-type">Annual Plan</h2>
+            <p class="plan-price">$59.99/year</p>
+          </div>
+          <a class="change" href="https://www.frontendmentor.io/profile/correlucas">change</a>
         </div>
-        <a class="change" href="https://www.frontendmentor.io/profile/correlucas">change</a>
-      </div>
 
-      <div class="payment-checkout">
-        <button class="button">Proceed to Payment</button>
-        <a class="cancel-order" href="https://www.frontendmentor.io/profile/correlucas">Cancel Order</a>
+        <div class="payment-checkout" aria-label="Proceed to payment">
+          <button class="button">Proceed to Payment</button>
+          <a class="cancel-order" href="https://www.frontendmentor.io/profile/correlucas">Cancel Order</a>
+        </div>
       </div>
     </div>
   </main>
