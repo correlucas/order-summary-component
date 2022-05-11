@@ -4,7 +4,7 @@
   /* primary */
   --p-blue: hsla(245, 75%, 52%, 1);
   --p-dark-blue: hsla(223, 46%, 23%, 1);
-
+  --p-lt-blue: hsla(245, 83%, 68%, 1);
   /* neutral */
   --n-dark-gray: hsla(224, 23%, 55%, 1);
   --n-lt-gray: hsla(228, 100%, 99%, 1);
@@ -115,22 +115,47 @@ body {
   background-color: var(--n-lt-gray);
 }
 
-.payment a {
+.change {
   font-weight: 900;
   font-size: 0.95rem;
-  text-decoration: underline;
+  text-decoration: none;
   margin-left: 60px;
   color: var(--p-blue);
+  position: relative;
 }
 
-.cancel {
+.change:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--p-blue);
+  margin-top: -4px;
+  transition: ease-in 0.5s;
+}
+
+.change:hover {
+  color: var(--p-lt-blue);
+}
+
+.change:hover:after {
+  background-color: var(--p-lt-blue);
+  width: 0%;
+}
+
+.cancel-order {
   display: block;
   font-weight: 700;
   color: var(--n-dark-gray);
   margin-top: 32px;
 }
 
-.payment-button {
+.cancel-order:hover {
+  color: var(--p-dark-blue);
+  transition: ease-in 0.5s;
+}
+
+.payment-checkout {
   display: flex;
   flex-direction: column;
 }
@@ -150,4 +175,9 @@ body {
   color: var(--n-white);
   background-color: var(--p-blue);
   filter: drop-shadow(0px 8px 6px rgba(7, 23, 255, 0.245));
+}
+
+.button:hover {
+  background-color: var(--p-lt-blue);
+  transition: ease-in 0.5s;
 }
