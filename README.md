@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/order-summary-component-pure-html-css-and-custom-active-hover-states-SJwF6N9Lc)
-- Live Site URL: [Live Site at Vercel](https://order-summary-component-eight-rho.vercel.app/)
+- Live Site URL: [Live Site at Vercel](https://order-summary-component-n95kwj13c-correlucas.vercel.app//)
 ## My process
 
 ### Built with
